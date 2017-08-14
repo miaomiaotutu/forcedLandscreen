@@ -39,6 +39,7 @@
 
 - (IBAction)landscape:(UIButton *)sender {
     LandscapeViewController *landVC = [[LandscapeViewController alloc]init];
+    landVC.navgationVC = self.navigationController;
     MJLCustomNavigation *nav = [[MJLCustomNavigation alloc]initWithRootViewController:landVC];
     [self presentViewController:nav animated:NO completion:^{
         

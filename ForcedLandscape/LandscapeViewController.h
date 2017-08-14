@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface LandscapeViewController : UIViewController
-
+@property (nonatomic,strong)UINavigationController *navgationVC;
 @end

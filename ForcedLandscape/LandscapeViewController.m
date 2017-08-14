@@ -36,10 +36,9 @@
     blueView.backgroundColor = UIColor.blueColor;
     blueView.layer.borderColor = UIColor.blackColor.CGColor;
     blueView.layer.borderWidth = 2;
-    [self.view addSubview:blueView];
-    
+    [self.view addSubview:blueView];    
     UIView *superview = self.view;
-    int padding = 64;
+    CGFloat padding = 64.0;
     
     [greenView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.greaterThanOrEqualTo(superview.mas_top).offset(padding);
